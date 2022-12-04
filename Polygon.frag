@@ -20,6 +20,9 @@ float PolyShape(vec2 pos, float radius, float sideCount)
     poly=floor(poly);
     poly*=slice;
     poly-=angle;
+    poly=cos(poly);
+    poly*=length(pos);
+    poly=step(radius,poly);
 
      return poly;
 }
@@ -27,7 +30,7 @@ float PolyShape(vec2 pos, float radius, float sideCount)
 void main()
 {
     vec2 pos = gl_FragCoord.xy/u_resolution;
-    vec3 color=vec3(PolyShape(pos, 0.2, 6.0),0,0);
+    vec3 color=vec3(PolyShape(pos, 0.2, 8.0),0.4,0.1);
     /* 输出颜色 */
     gl_FragColor = vec4(color, 1.0);
 

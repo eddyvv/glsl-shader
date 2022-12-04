@@ -50,3 +50,6 @@
 
 ![Gradient](./image/Gradient%20Rice.jpg)
 
+* 八边形
+
+![Octagon](./image/Octagon.jpg)
