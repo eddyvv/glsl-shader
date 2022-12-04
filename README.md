@@ -45,3 +45,8 @@
 * 带虚边的方形
 
 ![Square2](./image/Square2.jpg)
+
+* 渐变米形
+
+![Gradient](./image/Gradient%20Rice.jpg)
+

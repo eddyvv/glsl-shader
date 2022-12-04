@@ -10,14 +10,18 @@ float PolyShape(vec2 pos, float radius, float sideCount)
 {
     pos=pos-0.5;
     float angle=atan(pos.y,pos.x);
-    return angle/(2.*PI)+0.5;
-    // float slice=PI*2.0/sideCount;
-    // float poly=angle;
+    //return angle/(2.*PI)+0.5;
+    /* 切片，需求切多少多边形 */
+    float slice=PI*2.0/sideCount;
+    float poly=angle;
 
-    // poly=length(pos);
-    // poly=0.5+angle/slice;
+    poly=length(pos);
+    poly=0.5+angle/slice;
+    poly=floor(poly);
+    poly*=slice;
+    poly-=angle;
 
-    // return poly;
+     return poly;
 }
 
 void main()
