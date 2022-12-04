@@ -19,7 +19,8 @@ float rectShape(vec2 pos, float scale)
 void main()
 {
     vec2 st = gl_FragCoord.xy/u_resolution;
-    vec3 color=vec3(rectShape(st,0.1));
+    //vec3 color=vec3(rectShape(st,0.1));
+    vec3 color=vec3(1.-rectShape(st,0.1));
     /* 输出颜色 */
     gl_FragColor = vec4(color, 1.0);
 

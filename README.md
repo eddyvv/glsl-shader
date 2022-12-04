@@ -36,4 +36,8 @@
 
 * 带虚边的方形
 
-![](./image/Square1.jpg)
+![Square1](./image/Square1.jpg)
+
+* 带虚边的方形
+
+![Square2](./image/Square2.jpg)
