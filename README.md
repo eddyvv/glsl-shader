@@ -33,3 +33,7 @@
 * 方形
 
 ![Square](./image/Square.jpg)
+
+* 带虚边的方形
+
+![](./image/Square1.jpg)
