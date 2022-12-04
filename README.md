@@ -20,3 +20,6 @@
 
 * 带光源的球体
 ![lightCircle2](./image/Light%20sphere2.jpg)
+
+* 带光源、阴影的球
+![](./image/lightShadow.jpg)
