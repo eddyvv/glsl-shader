@@ -46,6 +46,8 @@
 
 ![Square2](./image/Square2.jpg)
 
+## [Polygon.frag](./Polygon.frag)
+
 * 渐变米形
 
 ![Gradient](./image/Gradient%20Rice.jpg)
