@@ -4,31 +4,35 @@
 2. `ctrl+shift+p`，输入`Show glslCanvas`；
 3. 运行；
 
-## demo.frag
+## [demo.frag](./demo.frag)
 
 ![demo](./image/demo.jpg)
 
-## Circle.frag
+## [Circle.frag](./Circle.frag)
+
 * 圆
 
 ![Circle](./image/Circle.jpg)
 
+## [Sphere.frag](./Sphere.frag)
+
 * 带光源的球体
 
-![light circle](./image/Light%20sphere.jpg)
+![light Sphere](./image/Light%20sphere.jpg)
 
 * 环境光球
 
-![lightCircle1](./image/Light%20sphere1.jpg)
+![lightSphere1](./image/Light%20sphere1.jpg)
 
 * 带光源的球体
 
-![lightCircle2](./image/Light%20sphere2.jpg)
+![lightSphere2](./image/Light%20sphere2.jpg)
 
 * 带光源、阴影的球
-![](./image/lightShadow.jpg)
 
-## Square.frag
+![lightShadow](./image/lightShadow.jpg)
+
+## [Square.frag](./Square.frag)
 
 * 方形
 
