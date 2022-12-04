@@ -20,6 +20,7 @@ void main()
     float sphereAlpha=step(0.5, sphere);
     /* 高光，限制高光范围在0~0.75之间 */
     color*= clamp(sphereAlpha, 0.0, 0.75);
+    color=vec3((1.0 - length(st - vec2(-0.12, 0.12)) * 3.0));
     color+=(1.0 - length(st - vec2(-0.12, 0.12)) * 3.0)*(1.0 - sphereAlpha);
 
     /* 输出颜色 */
