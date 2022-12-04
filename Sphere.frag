@@ -20,9 +20,14 @@ void main()
     float sphereAlpha=step(0.5, sphere);
     /* 高光，限制高光范围在0~0.75之间 */
     color*= clamp(sphereAlpha, 0.0, 0.75);
-    color=vec3((1.0 - length(st - vec2(-0.12, 0.12)) * 3.0));
+    /* 求亮斑 */
+    //color=vec3((1.0 - length(st - vec2(-0.12, 0.12)) * 3.0))*(1.0 - sphereAlpha);
+
     color+=(1.0 - length(st - vec2(-0.12, 0.12)) * 3.0)*(1.0 - sphereAlpha);
 
+    float reflight = 1.0-sphereAlpha;
+        reflight*=smoothstep(0.3, 0.5, (length(st*0.5 + vec2(0.05, -0.08)))*2.0);
+    color=vec3(reflight);
     /* 输出颜色 */
     gl_FragColor = vec4(color, 1.0);
 
